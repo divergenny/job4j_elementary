@@ -7,32 +7,32 @@ public class Converter {
 
     public static double rubleToEuro(int value) {
         double result = (double) value / EURO; /* формула перевода рублей в евро. */
-        return Math.round(result);
+        return (double) Math.round(result * 100) / 100;
     }
 
     public static double rubleToDollar(int value) {
         double result = (double) value / DOLLAR; /* формула перевода рублей в доллары. */
-        return Math.round(result);
+        return (double) Math.round(result * 100) / 100;
     }
 
     public static double rubleToUzs(int value) {
         double result = (double) value * UZS; /* формула перевода рублей в узбекские суммы. */
-        return Math.round(result);
+        return (double) Math.round(result * 100) / 100;
     }
 
     public static double euroToRuble(int value) {
         double result = (double) value * EURO; /* формула перевода евро в рубли. */
-        return Math.round(result);
+        return (double) Math.round(result * 100) / 100;
     }
 
     public static double dollarToRuble(int value) {
         double result = (double) value * DOLLAR; /* формула перевода долларов в рубли. */
-        return Math.round(result);
+        return (double) Math.round(result * 100) / 100;
     }
 
     public static double uzsToRuble(int value) {
         double result = (double) value / UZS; /* формула перевода узбекских сум в рубли. */
-        return Math.round(result);
+        return (double) Math.round(result * 100) / 100;
     }
 
     public static void main(String[] args) {
@@ -42,19 +42,19 @@ public class Converter {
         double expected = 2.0;
         double out = Converter.rubleToEuro(in);
         boolean passed = expected == out;
-        System.out.println("140 rubles are 2.000 euro. Test result : " + passed);
+        System.out.println("140 rubles are 2.00 euro. Test result : " + passed);
 
         in = 140;
-        expected = 2.0;
+        expected = 2.33;
         out = Converter.rubleToDollar(in);
         passed = expected == out;
-        System.out.println("140 rubles are 2.333 dollars. Test result : " + passed);
+        System.out.println("140 rubles are 2.33 dollars. Test result : " + passed);
 
         in = 140;
-        expected = 20014.0;
+        expected = 20014.4;
         out = Converter.rubleToUzs(in);
         passed = expected == out;
-        System.out.println("140 rubles are 20014.0 uzbek sums. Test result : " + passed);
+        System.out.println("140 rubles are 20014.4 uzbek sums. Test result : " + passed);
 
         in = 140;
         expected = 9800.0;
@@ -69,10 +69,10 @@ public class Converter {
         System.out.println("140 dollar are 8400.0 ruble. Test result : " + passed);
 
         in = 140;
-        expected = 1.0;
+        expected = 0.98;
         out = Converter.uzsToRuble(in);
         passed = expected == out;
-        System.out.println("140 uzbek sums are 1.0 ruble. Test result : " + passed);
+        System.out.println("140 uzbek sums are 0.98 ruble. Test result : " + passed);
 
         System.out.println("\n===== TEST Code End =====\n");
 

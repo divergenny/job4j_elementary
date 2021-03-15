@@ -10,7 +10,7 @@ public class ConverterTest {
         int in = 140;
         double expected = 2.0;
         double out = Converter.rubleToEuro(in);
-        Assert.assertEquals(expected, out, 0);
+        Assert.assertEquals(expected, out, 0.1);
     }
 
     @Test
@@ -18,7 +18,7 @@ public class ConverterTest {
         int in = 180;
         double expected = 2.57;
         double out = Converter.rubleToEuro(in);
-        Assert.assertEquals(expected, out, 0);
+        Assert.assertEquals(expected, out, 0.1);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class ConverterTest {
         int in = 140;
         double expected = 2.33;
         double out = Converter.rubleToDollar(in);
-        Assert.assertEquals(expected, out, 0);
+        Assert.assertEquals(expected, out, 0.1);
     }
 
     @Test
@@ -34,7 +34,7 @@ public class ConverterTest {
         int in = 140;
         double expected = 20014.4;
         double out = Converter.rubleToUzs(in);
-        Assert.assertEquals(expected, out, 0);
+        Assert.assertEquals(expected, out, 0.1);
     }
 
     @Test
@@ -42,7 +42,7 @@ public class ConverterTest {
         int in = 140;
         double expected = 9800;
         double out = Converter.euroToRuble(in);
-        Assert.assertEquals(expected, out, 0);
+        Assert.assertEquals(expected, out, 0.1);
     }
 
     @Test
@@ -50,7 +50,7 @@ public class ConverterTest {
         int in = 140;
         double expected = 8400;
         double out = Converter.dollarToRuble(in);
-        Assert.assertEquals(expected, out, 0);
+        Assert.assertEquals(expected, out, 0.1);
     }
 
     @Test
@@ -58,6 +58,6 @@ public class ConverterTest {
         int in = 140;
         double expected = 0.98;
         double out = Converter.uzsToRuble(in);
-        Assert.assertEquals(expected, out, 0);
+        Assert.assertEquals(expected, out, 0.1);
     }
 }

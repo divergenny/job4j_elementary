@@ -15,5 +15,11 @@ public class Point {
 
         result = Point.distance(16, 24, 9, 6);
         System.out.println("result (16, 24) to (9, 6) is equal to  " + result);
+
+        result = Point.distance(44, 14, 8, 16);
+        System.out.println("result (44, 14) to (8, 16) is equal to  " + result);
+
+        result = Point.distance(4, 5, 4, 24);
+        System.out.println("result (4, 5) to (4, 24) is equal to  " + result);
     }
 }

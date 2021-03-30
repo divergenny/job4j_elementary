@@ -46,9 +46,9 @@ public class CounterTest {
     @Test
     public void whenSumNumbersFromOneToOneThen0() {
         int start = 1;
-        int finish = 80;
+        int finish = 1;
         int result = Counter.sum(start, finish);
-        int expected = 3240;
+        int expected = 0;
         Assert.assertEquals(expected, result);
     }
 

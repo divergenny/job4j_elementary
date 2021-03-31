@@ -48,7 +48,7 @@ public class CounterTest {
         int start = 1;
         int finish = 1;
         int result = Counter.sum(start, finish);
-        int expected = 0;
+        int expected = 1;
         Assert.assertEquals(expected, result);
     }
 

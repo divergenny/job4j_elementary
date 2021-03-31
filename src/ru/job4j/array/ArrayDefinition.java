@@ -12,8 +12,8 @@ public class ArrayDefinition {
         names[2] = "Kudrat";
         names[3] = "Petr";
 
-        for (int var = 0; var < 4; var++) {
-            System.out.println(names[var]);
+        for (int index = 0; index < 4; index++) {
+            System.out.println(names[index]);
         }
 
         System.out.println("Size of array ages: " + ages.length);

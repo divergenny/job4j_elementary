@@ -5,7 +5,7 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index;
-                for (int iterator = point; iterator < array.length; iterator++) {
+                for (int iterator = (point + 1); iterator < array.length; iterator++) {
                     if (array[iterator] != null) {
                         SwitchArray.swap(array, point, iterator);
                         break;

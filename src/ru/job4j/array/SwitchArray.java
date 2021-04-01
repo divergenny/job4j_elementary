@@ -9,8 +9,6 @@ public class SwitchArray {
     }
 
     public static int[] swap(int[] array, int source, int dest) {
-        source--;
-        dest--;
         int temp = array[dest];
         array[dest] = array[source];
         array[source] = temp;

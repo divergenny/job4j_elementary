@@ -1,32 +1,32 @@
 package ru.job4j.converter;
 
 public class Converter {
-    private static final double DOLLAR = 60; // 1 доллар = 60 рублей.
-    private static final double EURO = 70; // 1 евро = 70 рублей.
-    private static final double UZS = 142.96; // 1 рубль = 142.96 узбекских сум.
+    private static final double DOLLAR = 60;
+    private static final double EURO = 70;
+    private static final double UZS = 142.96;
 
     public static double rubleToEuro(int value) {
-        return value / EURO; /* формула перевода рублей в евро. */
+        return value / EURO;
     }
 
     public static double rubleToDollar(int value) {
-        return value / DOLLAR; /* формула перевода рублей в доллары. */
+        return value / DOLLAR;
     }
 
     public static double rubleToUzs(int value) {
-        return value * UZS; /* формула перевода рублей в узбекские суммы. */
+        return value * UZS;
     }
 
     public static double euroToRuble(int value) {
-        return value * EURO; /* формула перевода евро в рубли. */
+        return value * EURO;
     }
 
     public static double dollarToRuble(int value) {
-        return value * DOLLAR; /* формула перевода долларов в рубли. */
+        return value * DOLLAR;
     }
 
     public static double uzsToRuble(int value) {
-        return value / UZS; /* формула перевода узбекских сум в рубли. */
+        return value / UZS;
     }
 
     public static void main(String[] args) {

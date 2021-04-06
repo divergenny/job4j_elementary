@@ -5,9 +5,11 @@ public class Max {
         return left >= right ? left : right;
     }
 
-    public static void main(String[] args) {
-        System.out.println(Max.max(3, 4));
-        System.out.println(Max.max(24, 0));
-        System.out.println(Max.max(8, 8));
+    public static int max(int one, int two, int three) {
+        return one >= max(two, three) ? one : max(two, three);
+    }
+
+    public static int max(int one, int two, int three, int four) {
+        return max(one, two) >= max(three, four) ? max(one, two) : max(three, four);
     }
 }
